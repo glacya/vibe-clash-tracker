@@ -1,0 +1,43 @@
+{
+    "id": 26000070,
+    "name": "과성장 마법",
+    "dark_spell_factory": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 62500,
+            "time": "5d 12h",
+            "laboratory": 10
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 125000,
+            "time": "8d 12h",
+            "laboratory": 12
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 175000,
+            "time": "10d",
+            "laboratory": 14
+        }
+    ]
+}

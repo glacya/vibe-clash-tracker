@@ -1,0 +1,64 @@
+{
+    "id": 1000067,
+    "name": "투석기",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 8000000,
+            "time": "6d",
+            "town_hall": 13
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 9000000,
+            "time": "7d",
+            "town_hall": 13
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 11000000,
+            "time": "7d 12h",
+            "town_hall": 14
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 11500000,
+            "time": "8d",
+            "town_hall": 15
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 12000000,
+            "time": "8d 12h",
+            "town_hall": 16
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 16500000,
+            "time": "10d 12h",
+            "town_hall": 17
+        }
+    ],
+    "available": [
+        13,
+        13
+    ]
+}

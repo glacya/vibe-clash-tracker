@@ -1,0 +1,37 @@
+{
+    "id": 1000089,
+    "name": "화염 방사포",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 17000000,
+            "time": "11d",
+            "town_hall": 17
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 18000000,
+            "time": "11d 12h",
+            "town_hall": 17
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 29000000,
+            "time": "15d",
+            "town_hall": 18
+        }
+    ],
+    "available": [
+        17,
+        17
+    ]
+}

@@ -1,0 +1,167 @@
+{
+    "rarity": "epic",
+    "upgrade": [
+        {
+            "level": 1,
+            "cost": {
+                "shiny": 0,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 1
+        },
+        {
+            "level": 2,
+            "cost": {
+                "shiny": 120,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 1
+        },
+        {
+            "level": 3,
+            "cost": {
+                "shiny": 240,
+                "glowy": 20,
+                "starry": 0
+            },
+            "blacksmith": 1
+        },
+        {
+            "level": 4,
+            "cost": {
+                "shiny": 400,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 1
+        },
+        {
+            "level": 5,
+            "cost": {
+                "shiny": 600,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 1
+        },
+        {
+            "level": 6,
+            "cost": {
+                "shiny": 840,
+                "glowy": 100,
+                "starry": 0
+            },
+            "blacksmith": 1
+        },
+        {
+            "level": 7,
+            "cost": {
+                "shiny": 1120,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 1
+        },
+        {
+            "level": 8,
+            "cost": {
+                "shiny": 1440,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 1
+        },
+        {
+            "level": 9,
+            "cost": {
+                "shiny": 1800,
+                "glowy": 200,
+                "starry": 0
+            },
+            "blacksmith": 1
+        },
+        {
+            "level": 10,
+            "cost": {
+                "shiny": 1900,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 3
+        },
+        {
+            "level": 11,
+            "cost": {
+                "shiny": 2000,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 3
+        },
+        {
+            "level": 12,
+            "cost": {
+                "shiny": 2100,
+                "glowy": 400,
+                "starry": 0
+            },
+            "blacksmith": 3
+        },
+        {
+            "level": 13,
+            "cost": {
+                "shiny": 2200,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 5
+        },
+        {
+            "level": 14,
+            "cost": {
+                "shiny": 2300,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 5
+        },
+        {
+            "level": 15,
+            "cost": {
+                "shiny": 2400,
+                "glowy": 600,
+                "starry": 0
+            },
+            "blacksmith": 5
+        },
+        {
+            "level": 16,
+            "cost": {
+                "shiny": 2500,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 7
+        },
+        {
+            "level": 17,
+            "cost": {
+                "shiny": 2600,
+                "glowy": 0,
+                "starry": 0
+            },
+            "blacksmith": 7
+        },
+        {
+            "level": 18,
+            "cost": {
+                "shiny": 2700,
+                "glowy": 600,
+                "starry": 0
+            },
+            "blacksmith": 7
+        }
+    ]
+}

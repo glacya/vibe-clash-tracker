@@ -1,0 +1,110 @@
+{
+    "id": 1000023,
+    "name": "다크 엘릭서 정제소",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 180000,
+            "time": "8h",
+            "town_hall": 7
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 270000,
+            "time": "10h",
+            "town_hall": 7
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 540000,
+            "time": "12h",
+            "town_hall": 7
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 900000,
+            "time": "14h",
+            "town_hall": 9
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1200000,
+            "time": "16h",
+            "town_hall": 9
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1800000,
+            "time": "18h",
+            "town_hall": 9
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 2100000,
+            "time": "20h",
+            "town_hall": 10
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 2400000,
+            "time": "21h 25m 43s",
+            "town_hall": 11
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 3700000,
+            "time": "22h 30m",
+            "town_hall": 12
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 5300000,
+            "time": "23h 20m",
+            "town_hall": 14
+        },
+        {
+            "level": 11,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 12000000,
+            "time": "23h",
+            "town_hall": 16
+        }
+    ],
+    "available": [
+        7,
+        8,
+        9
+    ]
+}

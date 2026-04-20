@@ -1,0 +1,52 @@
+{
+    "id": 4000087,
+    "name": "통나무 발사기",
+    "workshop": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": "64s",
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 3200000,
+            "time": "20s",
+            "laboratory": 10
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 4500000,
+            "time": "76s",
+            "laboratory": 10
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7500000,
+            "time": "33s",
+            "laboratory": 11
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 18000000,
+            "time": "25s",
+            "laboratory": 14
+        }
+    ]
+}

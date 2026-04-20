@@ -1,0 +1,61 @@
+{
+    "id": 4000065,
+    "name": "드래곤 라이더",
+    "barracks": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7500000,
+            "time": "6d",
+            "laboratory": 11
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 12000000,
+            "time": "8d",
+            "laboratory": 12
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 14500000,
+            "time": "9d",
+            "laboratory": 14
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 19000000,
+            "time": "10d 6h",
+            "laboratory": 15
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 29500000,
+            "time": "15d 12h",
+            "laboratory": 16
+        }
+    ]
+}

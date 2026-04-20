@@ -1,0 +1,45 @@
+{
+    "id": 1000077,
+    "name": "모놀리스",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 200000,
+            "time": "7d",
+            "town_hall": 15
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 250000,
+            "time": "8d",
+            "town_hall": 15
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 260000,
+            "time": "9d",
+            "town_hall": 16
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 300000,
+            "time": "12d",
+            "town_hall": 17
+        }
+    ],
+    "available": [
+        15
+    ]
+}

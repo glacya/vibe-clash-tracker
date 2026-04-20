@@ -1,0 +1,136 @@
+{
+    "id": 1000014,
+    "name": "클랜 성",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 10000,
+            "time": null,
+            "town_hall": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 50000,
+            "time": "2h",
+            "town_hall": 4
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 600000,
+            "time": "12h",
+            "town_hall": 6
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1200000,
+            "time": "1d",
+            "town_hall": 8
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 2000000,
+            "time": "1d 12h",
+            "town_hall": 9
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 3000000,
+            "time": "2d",
+            "town_hall": 10
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 5000000,
+            "time": "3d",
+            "town_hall": 11
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 5000000,
+            "time": "4d",
+            "town_hall": 12
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 8000000,
+            "time": "6d",
+            "town_hall": 13
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 10000000,
+            "time": "7d",
+            "town_hall": 14
+        },
+        {
+            "level": 11,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 12000000,
+            "time": "8d",
+            "town_hall": 15
+        },
+        {
+            "level": 12,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 14500000,
+            "time": "9d",
+            "town_hall": 16
+        },
+        {
+            "level": 13,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 19000000,
+            "time": "11d",
+            "town_hall": 17
+        },
+        {
+            "level": 14,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 28000000,
+            "time": "14d",
+            "town_hall": 18
+        }
+    ],
+    "available": [
+        1,
+        10
+    ]
+}

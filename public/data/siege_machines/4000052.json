@@ -1,0 +1,52 @@
+{
+    "id": 4000052,
+    "name": "전투 비행선",
+    "workshop": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 2500000,
+            "time": "2d",
+            "laboratory": 10
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 3500000,
+            "time": "3d",
+            "laboratory": 10
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6500000,
+            "time": "7d",
+            "laboratory": 11
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 10000000,
+            "time": "9d",
+            "laboratory": 13
+        }
+    ]
+}

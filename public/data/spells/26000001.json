@@ -1,0 +1,115 @@
+{
+    "id": 26000001,
+    "name": "치유 마법",
+    "spell_factory": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 75000,
+            "time": "3h",
+            "laboratory": 2
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 150000,
+            "time": "6h",
+            "laboratory": 4
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 300000,
+            "time": "12h",
+            "laboratory": 5
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 900000,
+            "time": "1d",
+            "laboratory": 6
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1800000,
+            "time": "1d 12h",
+            "laboratory": 7
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 3000000,
+            "time": "3d",
+            "laboratory": 8
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6000000,
+            "time": "5d",
+            "laboratory": 11
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 11000000,
+            "time": "6d 12h",
+            "laboratory": 13
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 14000000,
+            "time": "7d",
+            "laboratory": 14
+        },
+        {
+            "level": 11,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 19000000,
+            "time": "10d 12h",
+            "laboratory": 15
+        },
+        {
+            "level": 12,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 29000000,
+            "time": "15d",
+            "laboratory": 16
+        }
+    ]
+}

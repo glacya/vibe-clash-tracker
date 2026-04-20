@@ -1,0 +1,97 @@
+{
+    "id": 73000011,
+    "name": "앵그리 젤리",
+    "pet_house": 10,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "pet_house": 10
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 150000,
+            "time": "3d",
+            "pet_house": 10
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 160000,
+            "time": "4d",
+            "pet_house": 10
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 170000,
+            "time": "5d",
+            "pet_house": 10
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 180000,
+            "time": "6d",
+            "pet_house": 10
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 190000,
+            "time": "7d",
+            "pet_house": 10
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 200000,
+            "time": "8d",
+            "pet_house": 10
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 210000,
+            "time": "8d",
+            "pet_house": 10
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 220000,
+            "time": "8d",
+            "pet_house": 10
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 230000,
+            "time": "8d",
+            "pet_house": 10
+        }
+    ]
+}

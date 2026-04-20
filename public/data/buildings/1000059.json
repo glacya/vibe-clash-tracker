@@ -1,0 +1,81 @@
+{
+    "id": 1000059,
+    "name": "작업장",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 2400000,
+            "time": "2d",
+            "town_hall": 12
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 3700000,
+            "time": "3d",
+            "town_hall": 12
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 5000000,
+            "time": "3d 12h",
+            "town_hall": 12
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 8700000,
+            "time": "4d",
+            "town_hall": 13
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 9000000,
+            "time": "5d",
+            "town_hall": 13
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 10000000,
+            "time": "5d 12h",
+            "town_hall": 14
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 11000000,
+            "time": "6d",
+            "town_hall": 15
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 13000000,
+            "time": "7d",
+            "town_hall": 16
+        }
+    ],
+    "available": [
+        12
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": 4000095,
+    "name": "일렉트로 타이탄",
+    "barracks": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 14000000,
+            "time": "9d",
+            "laboratory": 12
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 16000000,
+            "time": "9d 12h",
+            "laboratory": 13
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 18500000,
+            "time": "11d",
+            "laboratory": 14
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 30000000,
+            "time": "16d",
+            "laboratory": 16
+        }
+    ]
+}

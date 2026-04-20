@@ -1,0 +1,43 @@
+{
+    "id": 26000035,
+    "name": "투명 마법",
+    "spell_factory": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 5000000,
+            "time": "3d",
+            "laboratory": 9
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6000000,
+            "time": "4d",
+            "laboratory": 10
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7000000,
+            "time": "5d",
+            "laboratory": 11
+        }
+    ]
+}

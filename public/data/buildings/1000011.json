@@ -1,0 +1,166 @@
+{
+    "id": 1000011,
+    "name": "마법사 타워",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 100000,
+            "time": "1h",
+            "town_hall": 5
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 150000,
+            "time": "1h 30m",
+            "town_hall": 5
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 250000,
+            "time": "4h",
+            "town_hall": 6
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 400000,
+            "time": "8h",
+            "town_hall": 7
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 550000,
+            "time": "10h",
+            "town_hall": 8
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 660000,
+            "time": "12h",
+            "town_hall": 8
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1000000,
+            "time": "18h",
+            "town_hall": 9
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1100000,
+            "time": "20h",
+            "town_hall": 10
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1300000,
+            "time": "1d",
+            "town_hall": 10
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 2000000,
+            "time": "1d 6h",
+            "town_hall": 11
+        },
+        {
+            "level": 11,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 2500000,
+            "time": "1d 12h",
+            "town_hall": 12
+        },
+        {
+            "level": 12,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 2600000,
+            "time": "1d 18h",
+            "town_hall": 13
+        },
+        {
+            "level": 13,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 3000000,
+            "time": "2d",
+            "town_hall": 13
+        },
+        {
+            "level": 14,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 4500000,
+            "time": "3d",
+            "town_hall": 14
+        },
+        {
+            "level": 15,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 5500000,
+            "time": "4d",
+            "town_hall": 15
+        },
+        {
+            "level": 16,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 8000000,
+            "time": "4d 12h",
+            "town_hall": 16
+        },
+        {
+            "level": 17,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 14000000,
+            "time": "8d 12h",
+            "town_hall": 17
+        }
+    ],
+    "available": [
+        5,
+        6,
+        8,
+        9,
+        11
+    ]
+}

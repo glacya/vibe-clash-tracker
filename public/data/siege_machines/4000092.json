@@ -1,0 +1,52 @@
+{
+    "id": 4000092,
+    "name": "배틀 드릴",
+    "workshop": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6000000,
+            "time": "4d",
+            "laboratory": 13
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 8500000,
+            "time": "5d",
+            "laboratory": 13
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 10000000,
+            "time": "8d",
+            "laboratory": 13
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 17000000,
+            "time": "9d",
+            "laboratory": 15
+        }
+    ]
+}

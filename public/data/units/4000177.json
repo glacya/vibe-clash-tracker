@@ -1,0 +1,34 @@
+{
+    "id": 4000177,
+    "name": "운석 골렘",
+    "barracks": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 28000000,
+            "time": "14d",
+            "laboratory": 15
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 30000000,
+            "time": "16d",
+            "laboratory": 16
+        }
+    ]
+}

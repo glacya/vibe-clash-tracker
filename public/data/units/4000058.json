@@ -1,0 +1,88 @@
+{
+    "id": 4000058,
+    "name": "얼음 골렘",
+    "dark_barracks": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        }
+    ]
+}

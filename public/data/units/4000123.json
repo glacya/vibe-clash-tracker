@@ -1,0 +1,52 @@
+{
+    "id": 4000123,
+    "name": "드루이드",
+    "dark_barracks": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 125000,
+            "time": "9d",
+            "laboratory": 12
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 175000,
+            "time": "9d 12h",
+            "laboratory": 13
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 187500,
+            "time": "11d",
+            "laboratory": 14
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 300000,
+            "time": "12d",
+            "laboratory": 15
+        }
+    ]
+}

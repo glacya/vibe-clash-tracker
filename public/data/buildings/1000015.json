@@ -1,0 +1,76 @@
+{
+    "id": 1000015,
+    "name": "장인의 집",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": null,
+            "time": null,
+            "town_hall": 1
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 3000000,
+            "time": "2d",
+            "town_hall": 14
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 4000000,
+            "time": "3d",
+            "town_hall": 14
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 6000000,
+            "time": "4d",
+            "town_hall": 14
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 7000000,
+            "time": "5d",
+            "town_hall": 15
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 8000000,
+            "time": "5d 12h",
+            "town_hall": 16
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 15500000,
+            "time": "9d 12h",
+            "town_hall": 17
+        }
+    ],
+    "available": [
+        1,
+        1,
+        1,
+        1,
+        1
+    ]
+}

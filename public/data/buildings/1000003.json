@@ -1,0 +1,183 @@
+{
+    "id": 1000003,
+    "name": "엘릭서 저장소",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 300,
+            "time": "10s",
+            "town_hall": 1
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 750,
+            "time": "2m",
+            "town_hall": 2
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1500,
+            "time": "5m",
+            "town_hall": 2
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 3000,
+            "time": "15m",
+            "town_hall": 3
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 6000,
+            "time": "30m",
+            "town_hall": 3
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 12000,
+            "time": "1h",
+            "town_hall": 3
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 25000,
+            "time": "2h",
+            "town_hall": 4
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 50000,
+            "time": "3h",
+            "town_hall": 4
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 100000,
+            "time": "4h",
+            "town_hall": 5
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 250000,
+            "time": "5h",
+            "town_hall": 6
+        },
+        {
+            "level": 11,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 500000,
+            "time": "6h",
+            "town_hall": 7
+        },
+        {
+            "level": 12,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1000000,
+            "time": "12h",
+            "town_hall": 11
+        },
+        {
+            "level": 13,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1800000,
+            "time": "1d",
+            "town_hall": 12
+        },
+        {
+            "level": 14,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 2800000,
+            "time": "2d",
+            "town_hall": 13
+        },
+        {
+            "level": 15,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 3000000,
+            "time": "3d",
+            "town_hall": 14
+        },
+        {
+            "level": 16,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 4000000,
+            "time": "4d",
+            "town_hall": 15
+        },
+        {
+            "level": 17,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 5500000,
+            "time": "5d",
+            "town_hall": 16
+        },
+        {
+            "level": 18,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 10000000,
+            "time": "7d",
+            "town_hall": 17
+        },
+        {
+            "level": 19,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 18000000,
+            "time": "12d 12h",
+            "town_hall": 18
+        }
+    ],
+    "available": [
+        1,
+        3,
+        8,
+        9
+    ]
+}

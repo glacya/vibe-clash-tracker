@@ -1,0 +1,171 @@
+{
+    "id": 1000001,
+    "name": "마을 회관",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": null,
+            "time": null,
+            "town_hall": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1000,
+            "time": "10s",
+            "town_hall": null
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 4000,
+            "time": "30m",
+            "town_hall": null
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 25000,
+            "time": "3h",
+            "town_hall": null
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 150000,
+            "time": "6h",
+            "town_hall": null
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 500000,
+            "time": "12h",
+            "town_hall": null
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1000000,
+            "time": "18h",
+            "town_hall": null
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 2000000,
+            "time": "1d",
+            "town_hall": null
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 2500000,
+            "time": "2d",
+            "town_hall": null
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 3500000,
+            "time": "3d",
+            "town_hall": null
+        },
+        {
+            "level": 11,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 4000000,
+            "time": "5d",
+            "town_hall": null
+        },
+        {
+            "level": 12,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 6000000,
+            "time": "6d",
+            "town_hall": null
+        },
+        {
+            "level": 13,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 9000000,
+            "time": "7d",
+            "town_hall": null
+        },
+        {
+            "level": 14,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 12000000,
+            "time": "7d 12h",
+            "town_hall": null
+        },
+        {
+            "level": 15,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 13000000,
+            "time": "8d",
+            "town_hall": null
+        },
+        {
+            "level": 16,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 15000000,
+            "time": "9d",
+            "town_hall": null
+        },
+        {
+            "level": 17,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 16000000,
+            "time": "10d",
+            "town_hall": null
+        },
+        {
+            "level": 18,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 25000000,
+            "time": "14d",
+            "town_hall": null
+        }
+    ],
+    "available": [
+        1
+    ]
+}

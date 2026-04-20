@@ -1,0 +1,72 @@
+{
+    "id": 1000031,
+    "name": "독수리 포탑",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 5000000,
+            "time": "4d",
+            "town_hall": 11
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 6000000,
+            "time": "5d",
+            "town_hall": 11
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 9000000,
+            "time": "7d",
+            "town_hall": 12
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 10000000,
+            "time": "7d 12h",
+            "town_hall": 13
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 12000000,
+            "time": "8d",
+            "town_hall": 14
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 13000000,
+            "time": "9d",
+            "town_hall": 15
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 14000000,
+            "time": "9d 12h",
+            "town_hall": 16
+        }
+    ],
+    "available": [
+        11
+    ]
+}

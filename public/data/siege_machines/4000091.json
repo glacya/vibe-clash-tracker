@@ -1,0 +1,52 @@
+{
+    "id": 4000091,
+    "name": "화염 투척기",
+    "workshop": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 5500000,
+            "time": "3d",
+            "laboratory": 10
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 8000000,
+            "time": "4d",
+            "laboratory": 10
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 10000000,
+            "time": "7d",
+            "laboratory": 11
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 18000000,
+            "time": "12d",
+            "laboratory": 14
+        }
+    ]
+}

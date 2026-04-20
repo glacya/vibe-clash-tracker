@@ -1,0 +1,36 @@
+{
+    "id": 1000079,
+    "name": "멀티 개조 타워",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 17000000,
+            "time": "10d",
+            "town_hall": 17
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 18000000,
+            "time": "10d 18h",
+            "town_hall": 17
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 28000000,
+            "time": "14d",
+            "town_hall": 18
+        }
+    ],
+    "available": [
+        17
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "id": 4000150,
+    "name": "용광로",
+    "dark_barracks": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 200000,
+            "time": "12d",
+            "laboratory": 13
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 260000,
+            "time": "14d",
+            "laboratory": 14
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 320000,
+            "time": "16d",
+            "laboratory": 15
+        }
+    ]
+}

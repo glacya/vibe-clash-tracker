@@ -1,0 +1,97 @@
+{
+    "id": 4000022,
+    "name": "볼러",
+    "dark_barracks": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 32500,
+            "time": "2d",
+            "laboratory": 8
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 44000,
+            "time": "2d 12h",
+            "laboratory": 9
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 62500,
+            "time": "3d",
+            "laboratory": 10
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 85000,
+            "time": "4d",
+            "laboratory": 11
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 110000,
+            "time": "6d",
+            "laboratory": 12
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 145000,
+            "time": "7d",
+            "laboratory": 13
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 175000,
+            "time": "7d 12h",
+            "laboratory": 14
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 260000,
+            "time": "10d",
+            "laboratory": 15
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 360000,
+            "time": "15d",
+            "laboratory": 16
+        }
+    ]
+}

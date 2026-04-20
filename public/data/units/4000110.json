@@ -1,0 +1,34 @@
+{
+    "id": 4000110,
+    "name": "트리 라이더",
+    "barracks": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 15000000,
+            "time": "8d",
+            "laboratory": 13
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 17600000,
+            "time": "10d",
+            "laboratory": 14
+        }
+    ]
+}

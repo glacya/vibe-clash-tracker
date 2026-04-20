@@ -1,0 +1,166 @@
+{
+    "id": 1000019,
+    "name": "숨겨진 뇌전탑",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 250000,
+            "time": "2h",
+            "town_hall": 7
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 350000,
+            "time": "3h",
+            "town_hall": 7
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 500000,
+            "time": "4h",
+            "town_hall": 7
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 600000,
+            "time": "6h",
+            "town_hall": 8
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 800000,
+            "time": "12h",
+            "town_hall": 8
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1200000,
+            "time": "1d",
+            "town_hall": 8
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1400000,
+            "time": "1d 6h",
+            "town_hall": 9
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1600000,
+            "time": "1d 12h",
+            "town_hall": 10
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 2100000,
+            "time": "1d 18h",
+            "town_hall": 11
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 3000000,
+            "time": "2d",
+            "town_hall": 12
+        },
+        {
+            "level": 11,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 3100000,
+            "time": "2d 12h",
+            "town_hall": 13
+        },
+        {
+            "level": 12,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 3700000,
+            "time": "3d",
+            "town_hall": 13
+        },
+        {
+            "level": 13,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 5100000,
+            "time": "3d 12h",
+            "town_hall": 14
+        },
+        {
+            "level": 14,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 6500000,
+            "time": "4d",
+            "town_hall": 15
+        },
+        {
+            "level": 15,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 8200000,
+            "time": "5d",
+            "town_hall": 16
+        },
+        {
+            "level": 16,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 15000000,
+            "time": "9d",
+            "town_hall": 17
+        },
+        {
+            "level": 17,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 25000000,
+            "time": "13d",
+            "town_hall": 18
+        }
+    ],
+    "available": [
+        7,
+        7,
+        8,
+        9,
+        12
+    ]
+}

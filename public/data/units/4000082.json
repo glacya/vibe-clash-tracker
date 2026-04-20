@@ -1,0 +1,34 @@
+{
+    "id": 4000082,
+    "name": "헤드헌터",
+    "dark_barracks": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 57500,
+            "time": "5d",
+            "laboratory": 10
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 90000,
+            "time": "7d",
+            "laboratory": 11
+        }
+    ]
+}

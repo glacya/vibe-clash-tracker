@@ -1,0 +1,34 @@
+{
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1800000,
+            "time": null,
+            "town_hall": 11
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 2000000,
+            "time": "1d",
+            "town_hall": 11
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 2500000,
+            "time": "2d",
+            "town_hall": 12
+        }
+    ],
+    "available": [
+        11
+    ]
+}

@@ -1,0 +1,502 @@
+{
+    "id": 28000004,
+    "name": "로얄 챔피언",
+    "hero_hall": 7,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "hero_hall": 7
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 10000,
+            "time": "4h",
+            "hero_hall": 7
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 15000,
+            "time": "10h",
+            "hero_hall": 7
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 20000,
+            "time": "12h",
+            "hero_hall": 7
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 25000,
+            "time": "20h",
+            "hero_hall": 7
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 30000,
+            "time": "1d",
+            "hero_hall": 7
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 35000,
+            "time": "1d",
+            "hero_hall": 7
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 40000,
+            "time": "1d",
+            "hero_hall": 7
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 45000,
+            "time": "1d",
+            "hero_hall": 7
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 50000,
+            "time": "1d",
+            "hero_hall": 7
+        },
+        {
+            "level": 11,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 53000,
+            "time": "1d",
+            "hero_hall": 7
+        },
+        {
+            "level": 12,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 56000,
+            "time": "1d",
+            "hero_hall": 7
+        },
+        {
+            "level": 13,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 59000,
+            "time": "1d",
+            "hero_hall": 7
+        },
+        {
+            "level": 14,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 62000,
+            "time": "1d",
+            "hero_hall": 7
+        },
+        {
+            "level": 15,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 65000,
+            "time": "1d",
+            "hero_hall": 7
+        },
+        {
+            "level": 16,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 70000,
+            "time": "1d 12h",
+            "hero_hall": 7
+        },
+        {
+            "level": 17,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 75000,
+            "time": "1d 12h",
+            "hero_hall": 7
+        },
+        {
+            "level": 18,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 80000,
+            "time": "1d 12h",
+            "hero_hall": 7
+        },
+        {
+            "level": 19,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 85000,
+            "time": "1d 12h",
+            "hero_hall": 7
+        },
+        {
+            "level": 20,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 90000,
+            "time": "1d 12h",
+            "hero_hall": 7
+        },
+        {
+            "level": 21,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 95000,
+            "time": "2d",
+            "hero_hall": 7
+        },
+        {
+            "level": 22,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 100000,
+            "time": "2d",
+            "hero_hall": 7
+        },
+        {
+            "level": 23,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 105000,
+            "time": "2d",
+            "hero_hall": 7
+        },
+        {
+            "level": 24,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 110000,
+            "time": "2d",
+            "hero_hall": 7
+        },
+        {
+            "level": 25,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 115000,
+            "time": "2d",
+            "hero_hall": 7
+        },
+        {
+            "level": 26,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 120000,
+            "time": "3d",
+            "hero_hall": 8
+        },
+        {
+            "level": 27,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 125000,
+            "time": "3d",
+            "hero_hall": 8
+        },
+        {
+            "level": 28,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 130000,
+            "time": "3d",
+            "hero_hall": 8
+        },
+        {
+            "level": 29,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 135000,
+            "time": "3d",
+            "hero_hall": 8
+        },
+        {
+            "level": 30,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 140000,
+            "time": "3d",
+            "hero_hall": 8
+        },
+        {
+            "level": 31,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 145000,
+            "time": "4d",
+            "hero_hall": 9
+        },
+        {
+            "level": 32,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 150000,
+            "time": "4d",
+            "hero_hall": 9
+        },
+        {
+            "level": 33,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 155000,
+            "time": "4d",
+            "hero_hall": 9
+        },
+        {
+            "level": 34,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 160000,
+            "time": "4d",
+            "hero_hall": 9
+        },
+        {
+            "level": 35,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 165000,
+            "time": "4d",
+            "hero_hall": 9
+        },
+        {
+            "level": 36,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 170000,
+            "time": "5d",
+            "hero_hall": 9
+        },
+        {
+            "level": 37,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 175000,
+            "time": "5d",
+            "hero_hall": 9
+        },
+        {
+            "level": 38,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 180000,
+            "time": "5d",
+            "hero_hall": 9
+        },
+        {
+            "level": 39,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 200000,
+            "time": "5d",
+            "hero_hall": 9
+        },
+        {
+            "level": 40,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 220000,
+            "time": "5d",
+            "hero_hall": 9
+        },
+        {
+            "level": 41,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 240000,
+            "time": "5d",
+            "hero_hall": 10
+        },
+        {
+            "level": 42,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 260000,
+            "time": "6d",
+            "hero_hall": 10
+        },
+        {
+            "level": 43,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 280000,
+            "time": "6d 12h",
+            "hero_hall": 10
+        },
+        {
+            "level": 44,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 300000,
+            "time": "7d",
+            "hero_hall": 10
+        },
+        {
+            "level": 45,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 320000,
+            "time": "7d 12h",
+            "hero_hall": 10
+        },
+        {
+            "level": 46,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 340000,
+            "time": "8d",
+            "hero_hall": 11
+        },
+        {
+            "level": 47,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 350000,
+            "time": "8d",
+            "hero_hall": 11
+        },
+        {
+            "level": 48,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 360000,
+            "time": "8d",
+            "hero_hall": 11
+        },
+        {
+            "level": 49,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 370000,
+            "time": "8d",
+            "hero_hall": 11
+        },
+        {
+            "level": 50,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 380000,
+            "time": "8d",
+            "hero_hall": 11
+        },
+        {
+            "level": 51,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 400000,
+            "time": "8d",
+            "hero_hall": 12
+        },
+        {
+            "level": 52,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 410000,
+            "time": "8d",
+            "hero_hall": 12
+        },
+        {
+            "level": 53,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 420000,
+            "time": "8d",
+            "hero_hall": 12
+        },
+        {
+            "level": 54,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 430000,
+            "time": "8d",
+            "hero_hall": 12
+        },
+        {
+            "level": 55,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 450000,
+            "time": "8d",
+            "hero_hall": 12
+        }
+    ]
+}

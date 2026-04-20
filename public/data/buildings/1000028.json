@@ -1,0 +1,73 @@
+{
+    "id": 1000028,
+    "name": "바람 방출기",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 200000,
+            "time": "4h",
+            "town_hall": 6
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 300000,
+            "time": "6h",
+            "town_hall": 6
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 450000,
+            "time": "8h",
+            "town_hall": 7
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 800000,
+            "time": "12h",
+            "town_hall": 8
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1200000,
+            "time": "1d",
+            "town_hall": 9
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1900000,
+            "time": "2d",
+            "town_hall": 10
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 3400000,
+            "time": "3d",
+            "town_hall": 11
+        }
+    ],
+    "available": [
+        6,
+        9
+    ]
+}

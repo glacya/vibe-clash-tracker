@@ -1,0 +1,46 @@
+{
+    "id": 1000072,
+    "name": "마법 타워",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 9000000,
+            "time": "7d",
+            "town_hall": 15
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 11000000,
+            "time": "8d",
+            "town_hall": 15
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 12000000,
+            "time": "8d 12h",
+            "town_hall": 15
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 27000000,
+            "time": "14d",
+            "town_hall": 17
+        }
+    ],
+    "available": [
+        15,
+        15
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "id": 4000135,
+    "name": "유닛 발사기",
+    "workshop": 8,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 8500000,
+            "time": "6d",
+            "laboratory": 14
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 10000000,
+            "time": "9d",
+            "laboratory": 14
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 17000000,
+            "time": "9d",
+            "laboratory": 15
+        }
+    ]
+}

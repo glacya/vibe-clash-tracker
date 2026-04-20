@@ -1,0 +1,42 @@
+{
+    "id": 26000120,
+    "name": "토템 마법",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 21000000,
+            "time": "12d",
+            "laboratory": 14
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 22000000,
+            "time": "14d",
+            "laboratory": 15
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 23000000,
+            "time": "16d",
+            "laboratory": 16
+        }
+    ]
+}

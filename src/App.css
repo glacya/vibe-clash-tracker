@@ -1,0 +1,1105 @@
+/* ============================
+   Reset & Base
+   ============================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #0f1117;
+  --color-surface: #1a1d27;
+  --color-surface-2: #22263a;
+  --color-border: #2e3348;
+  --color-primary: #f4a827;
+  --color-primary-hover: #f7bf5c;
+  --color-text: #e8eaf0;
+  --color-text-muted: #8890aa;
+  --color-danger: #e05252;
+  --color-danger-bg: var(--color-danger-bg);
+  --color-th-max: #4ecb80;
+  --color-full-max: #7eb8f7;
+  --color-builder: #7ec8e3;
+  --radius: 10px;
+  --village-sidebar-w: 190px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* ============================
+   App Layout
+   ============================ */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.app__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.04em;
+}
+
+.app__header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.app__add-btn {
+  padding: 7px 16px;
+  background: var(--color-primary);
+  color: #111;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.15s;
+}
+
+.app__add-btn:hover {
+  background: var(--color-primary-hover);
+}
+
+.app__credit-btn {
+  padding: 7px 14px;
+  background: none;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.app__credit-btn:hover {
+  color: var(--color-text);
+  border-color: var(--color-text-muted);
+}
+
+/* ============================
+   CreditPage
+   ============================ */
+.credit-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 20px;
+}
+
+.credit-modal {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.credit-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.credit-modal__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.credit-modal__close {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  line-height: 1;
+  transition: color 0.12s, background 0.12s;
+}
+
+.credit-modal__close:hover {
+  color: var(--color-text);
+  background: var(--color-border);
+}
+
+.credit-modal__body {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.credit-section__title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.credit-section__text {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.credit-section__text + .credit-section__text {
+  margin-top: 6px;
+}
+
+.credit-section__text--en {
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+}
+
+.credit-blockquote {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border-left: 3px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.credit-link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.credit-link:hover {
+  text-decoration: underline;
+}
+
+.app__body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* 마을 탭 사이드바 */
+.app__village-sidebar {
+  width: var(--village-sidebar-w);
+  flex-shrink: 0;
+  border-right: 1px solid var(--color-border);
+  overflow-y: auto;
+}
+
+/* 오른쪽 메인 */
+.app__main {
+  flex: 1;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.app__paste-panel {
+  width: 100%;
+}
+
+.app__empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--color-text-muted);
+  padding: 60px 0;
+}
+
+.app__content {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.app__snapshot-sidebar {
+  width: 190px;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+.app__detail {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* ============================
+   VillageTabs
+   ============================ */
+.village-tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.village-tabs__header {
+  padding: 10px 14px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.village-tabs__list {
+  list-style: none;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.village-tabs__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.12s;
+  gap: 8px;
+}
+
+.village-tabs__item:hover {
+  background: var(--color-surface-2);
+}
+
+.village-tabs__item--active {
+  background: var(--color-surface-2);
+  border-left: 3px solid var(--color-primary);
+}
+
+.village-tabs__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.village-tabs__nickname {
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.village-tabs__nickname-input {
+  background: var(--color-bg);
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  width: 100%;
+  outline: none;
+}
+
+.village-tabs__tag {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  font-family: 'Consolas', monospace;
+}
+
+.village-tabs__meta {
+  font-size: 0.68rem;
+  color: var(--color-text-muted);
+}
+
+.village-tabs__actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.12s;
+}
+
+.village-tabs__item:hover .village-tabs__actions {
+  opacity: 1;
+}
+
+.village-tabs__btn {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 3px 5px;
+  border-radius: 4px;
+  transition: color 0.12s, background 0.12s;
+  line-height: 1;
+}
+
+.village-tabs__btn:hover {
+  color: var(--color-text);
+  background: var(--color-border);
+}
+
+.village-tabs__btn--danger:hover {
+  color: var(--color-danger);
+  background: var(--color-danger-bg);
+}
+
+/* ============================
+   JsonPaste
+   ============================ */
+.json-paste {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.json-paste__title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.json-paste__desc {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.json-paste__area {
+  width: 100%;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  color: var(--color-text);
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 0.78rem;
+  padding: 10px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.json-paste__area:focus {
+  border-color: var(--color-primary);
+}
+
+.json-paste__error {
+  color: var(--color-danger);
+  font-size: 0.82rem;
+}
+
+.json-paste__btn {
+  align-self: flex-end;
+  padding: 7px 18px;
+  background: var(--color-primary);
+  color: #111;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.15s;
+}
+
+.json-paste__btn:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+}
+
+.json-paste__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ============================
+   SnapshotList
+   ============================ */
+.snapshot-list {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.snapshot-list__title {
+  padding: 10px 14px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.snapshot-list__items {
+  list-style: none;
+}
+
+.snapshot-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.12s;
+}
+
+.snapshot-list__item:last-child {
+  border-bottom: none;
+}
+
+.snapshot-list__item:hover {
+  background: var(--color-surface-2);
+}
+
+.snapshot-list__item--active {
+  background: var(--color-surface-2);
+  border-left: 3px solid var(--color-primary);
+}
+
+.snapshot-list__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.snapshot-list__tag {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.snapshot-list__date {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.snapshot-list__delete {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 3px 5px;
+  border-radius: 4px;
+  transition: color 0.12s, background 0.12s;
+  line-height: 1;
+  opacity: 0;
+}
+
+.snapshot-list__item:hover .snapshot-list__delete {
+  opacity: 1;
+}
+
+.snapshot-list__delete:hover {
+  color: var(--color-danger);
+  background: var(--color-danger-bg);
+}
+
+/* ============================
+   SnapshotList - level display
+   ============================ */
+.snapshot-list__levels {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.snapshot-list__level {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.snapshot-list__level--builder {
+  color: var(--color-builder);
+}
+
+/* ============================
+   VillageOverview
+   ============================ */
+.overview {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 헤더: 닉네임+시간 좌 / 마을·장인기지 토글 우 */
+.overview__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border);
+  gap: 12px;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.overview__title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.overview__title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.overview__nickname {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.overview__time {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.overview__badges {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.overview__badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.overview__badge--th {
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.overview__badge-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.overview__badge-img--th {
+  width: 80px;
+  height: 80px;
+}
+
+.overview__badge-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.overview__badge-label--th {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* 마을 / 장인 기지 토글 버튼 */
+.overview__base-toggle {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.toggle-btn {
+  padding: 6px 14px;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+
+.toggle-btn + .toggle-btn {
+  border-left: 1px solid var(--color-border);
+}
+
+.toggle-btn:hover {
+  background: var(--color-surface-2);
+  color: var(--color-text);
+}
+
+.toggle-btn--active {
+  background: var(--color-primary);
+  color: #111;
+}
+
+.toggle-btn--active:hover {
+  background: var(--color-primary-hover);
+}
+
+/* 콘텐츠 영역 */
+.overview__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview__tabs-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--color-surface);
+}
+
+.overview__builders {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.gold-pass-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.gold-pass-label input[type="checkbox"] {
+  accent-color: var(--color-primary);
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+/* 콘텐츠 탭 (건물 / 군대 / 영웅 / 장비 / 펫) */
+.content-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--color-border);
+  padding: 0 20px;
+  margin-top: 12px;
+}
+
+.content-tabs--sub {
+  padding: 0 20px;
+  border-bottom: 1px solid var(--color-border);
+  margin-top: 0;
+  background: var(--color-bg);
+}
+
+.content-tab {
+  padding: 8px 14px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s;
+  margin-bottom: -1px;
+  white-space: nowrap;
+}
+
+.content-tab:hover {
+  color: var(--color-text);
+}
+
+.content-tab--active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.content-tab--sub {
+  font-size: 0.78rem;
+  padding: 6px 10px;
+}
+
+/* 패널 */
+.overview__panel {
+  padding: 16px 20px;
+  min-height: 120px;
+}
+
+.overview__panel--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.overview__unlock-msg {
+  padding: 48px 24px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* ============================
+   BuildingList
+   ============================ */
+.bld-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bld-empty {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  padding: 8px 0;
+}
+
+/* 그룹 */
+.bld-group {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bld-group__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--color-surface-2);
+  gap: 12px;
+}
+
+.bld-group__name {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.bld-group__total {
+  display: flex;
+  align-items: center;
+}
+
+.bld-group__all-max {
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.bld-group__wall-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bld-group__wall-summary {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  font-family: 'Consolas', monospace;
+}
+
+/* 행 공통 (헤더 + 데이터 행) */
+.bld-row {
+  display: grid;
+  grid-template-columns: 72px 1fr 180px 180px;
+  align-items: center;
+  border-top: 1px solid var(--color-border);
+  min-height: 56px;
+}
+
+.bld-row--header {
+  min-height: 28px;
+  background: var(--color-bg);
+}
+
+.bld-row__col-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  padding: 4px 12px;
+}
+
+/* 장벽 전용 행 */
+.bld-row--wall {
+  grid-template-columns: 120px 1fr 1fr;
+}
+
+.bld-row__wall-level-col {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+}
+
+.bld-row__wall-lvl {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--color-primary);
+}
+
+.bld-row__wall-cnt {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+/* 컬럼 1: 이미지 + 레벨 */
+.bld-row__img-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 0 8px 6px;
+}
+
+.bld-row__img-placeholder {
+  width: 64px;
+  height: 64px;
+  background: var(--color-border);
+  border-radius: 6px;
+}
+
+.bld-row__img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.bld-row__img-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.bld-row__lvl {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.bld-row__lvl--th-max {
+  color: var(--color-th-max);
+}
+
+.bld-row__lvl--full-max {
+  color: var(--color-full-max);
+}
+
+.bld-row__gear-up-icon {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 16px;
+  height: 16px;
+}
+
+/* 컬럼 2: 진행도 미터 */
+.bld-row__meter-col {
+  padding: 0 12px;
+}
+
+.bld-row__no-data {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.progress-meter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.progress-meter__blocks {
+  display: flex;
+  gap: 2px;
+  padding-right: 6px;
+}
+
+.progress-meter__block {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.progress-meter__block--filled {
+  background: var(--color-primary);
+}
+
+.progress-meter__block--max {
+  background: var(--color-th-max);
+}
+
+.progress-meter__block--full-max {
+  background: var(--color-full-max);
+}
+
+.progress-meter__block--empty {
+  background: var(--color-border);
+}
+
+.progress-meter__label {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  font-family: 'Consolas', monospace;
+}
+
+/* 컬럼 3, 4: 업그레이드 비용/시간 */
+.bld-row__next-col,
+.bld-row__total-col {
+  padding: 0 12px;
+}
+
+.bld-row__at-max {
+  font-size: 0.75rem;
+  color: var(--color-th-max);
+  font-weight: 600;
+}
+
+/* 최대 레벨 도달 시 열 3+4를 대체하는 spanning 셀 */
+.bld-row__max-col {
+  grid-column: 3 / 5;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.bld-row__max-col--th-max {
+  color: var(--color-th-max);
+}
+
+.bld-row__max-col--full-max {
+  color: var(--color-full-max);
+}
+
+/* 장벽 이중 비용 표시 */
+.wall-dual-cost {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.wall-dual-cost__sep {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* 비용+시간 블록 */
+.cost-time-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cost-time-block__row {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.cost-time-block__time {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+/* 비용 표시 */
+.cost-display {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cost-display__num {
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: 'Consolas', monospace;
+}
+
+.cost-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* 장비 — 영웅 섹션 */
+.equip-hero-section {
+  margin-bottom: 4px;
+}
+
+.equip-hero-header {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-sub);
+  padding: 5px 8px;
+  background: var(--color-bg-hover);
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+/* 건물 정보 인라인 표시 */
+.overview__bldg-info {
+  margin-left: 12px;
+  color: var(--color-text-sub);
+  font-size: 0.8rem;
+}

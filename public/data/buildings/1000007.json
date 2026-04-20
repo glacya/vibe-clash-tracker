@@ -1,0 +1,153 @@
+{
+    "id": 1000007,
+    "name": "연구소",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 5000,
+            "time": "1m",
+            "town_hall": 3
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 25000,
+            "time": "30m",
+            "town_hall": 4
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 50000,
+            "time": "2h",
+            "town_hall": 5
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 100000,
+            "time": "4h",
+            "town_hall": 6
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 200000,
+            "time": "8h",
+            "town_hall": 7
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 400000,
+            "time": "16h",
+            "town_hall": 8
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 800000,
+            "time": "1d",
+            "town_hall": 9
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1300000,
+            "time": "1d 18h",
+            "town_hall": 10
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 2100000,
+            "time": "2d 18h",
+            "town_hall": 11
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 3800000,
+            "time": "4d",
+            "town_hall": 12
+        },
+        {
+            "level": 11,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 5500000,
+            "time": "6d",
+            "town_hall": 13
+        },
+        {
+            "level": 12,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 8100000,
+            "time": "7d",
+            "town_hall": 14
+        },
+        {
+            "level": 13,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 10800000,
+            "time": "8d",
+            "town_hall": 15
+        },
+        {
+            "level": 14,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 13000000,
+            "time": "9d",
+            "town_hall": 16
+        },
+        {
+            "level": 15,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 18000000,
+            "time": "10d",
+            "town_hall": 17
+        },
+        {
+            "level": 16,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 27000000,
+            "time": "16d",
+            "town_hall": 18
+        }
+    ],
+    "available": [
+        3
+    ]
+}

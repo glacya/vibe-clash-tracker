@@ -1,0 +1,47 @@
+{
+    "id": 1000085,
+    "name": "리코셰 대포",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 12000000,
+            "time": "7d",
+            "town_hall": 16
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 13000000,
+            "time": "8d",
+            "town_hall": 16
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 17500000,
+            "time": "10d 18h",
+            "town_hall": 17
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 26500000,
+            "time": "13d 12h",
+            "town_hall": 18
+        }
+    ],
+    "available": [
+        16,
+        16,
+        17
+    ]
+}

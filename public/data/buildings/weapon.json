@@ -1,0 +1,48 @@
+[
+    {
+        "town_hall": 17,
+        "name": "인페르노 포탑",
+        "upgrade": [
+            {
+                "level": 1,
+                "resource_type": [
+                    "gold"
+                ],
+                "cost": null,
+                "time": null
+            },
+            {
+                "level": 2,
+                "resource_type": [
+                    "gold"
+                ],
+                "cost": 10000000,
+                "time": "6d"
+            },
+            {
+                "level": 1,
+                "resource_type": [
+                    "gold"
+                ],
+                "cost": 12000000,
+                "time": "7d"
+            },
+            {
+                "level": 1,
+                "resource_type": [
+                    "gold"
+                ],
+                "cost": 14000000,
+                "time": "8d"
+            },
+            {
+                "level": 5,
+                "resource_type": [
+                    "gold"
+                ],
+                "cost": 18000000,
+                "time": "10d"
+            }
+        ]
+    }
+]

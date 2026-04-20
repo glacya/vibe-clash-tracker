@@ -1,0 +1,727 @@
+{
+    "id": 28000002,
+    "name": "그랜드 워든",
+    "hero_hall": 5,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1000000,
+            "time": null,
+            "hero_hall": 5
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1000000,
+            "time": "2h",
+            "hero_hall": 5
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1100000,
+            "time": "4h",
+            "hero_hall": 5
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1200000,
+            "time": "8h",
+            "hero_hall": 5
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1400000,
+            "time": "10h",
+            "hero_hall": 5
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1500000,
+            "time": "12h",
+            "hero_hall": 5
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1700000,
+            "time": "14h",
+            "hero_hall": 5
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 1800000,
+            "time": "16h",
+            "hero_hall": 5
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 2000000,
+            "time": "18h",
+            "hero_hall": 5
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 2300000,
+            "time": "20h",
+            "hero_hall": 5
+        },
+        {
+            "level": 11,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 2700000,
+            "time": "1d",
+            "hero_hall": 5
+        },
+        {
+            "level": 12,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 3000000,
+            "time": "1d",
+            "hero_hall": 5
+        },
+        {
+            "level": 13,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 3400000,
+            "time": "1d",
+            "hero_hall": 5
+        },
+        {
+            "level": 14,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 3700000,
+            "time": "1d",
+            "hero_hall": 5
+        },
+        {
+            "level": 15,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 4100000,
+            "time": "1d",
+            "hero_hall": 5
+        },
+        {
+            "level": 16,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 4400000,
+            "time": "1d",
+            "hero_hall": 5
+        },
+        {
+            "level": 17,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 4800000,
+            "time": "1d",
+            "hero_hall": 5
+        },
+        {
+            "level": 18,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 5100000,
+            "time": "1d",
+            "hero_hall": 5
+        },
+        {
+            "level": 19,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 5500000,
+            "time": "1d",
+            "hero_hall": 5
+        },
+        {
+            "level": 20,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6000000,
+            "time": "1d",
+            "hero_hall": 5
+        },
+        {
+            "level": 21,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6100000,
+            "time": "1d",
+            "hero_hall": 6
+        },
+        {
+            "level": 22,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6200000,
+            "time": "1d",
+            "hero_hall": 6
+        },
+        {
+            "level": 23,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6300000,
+            "time": "1d",
+            "hero_hall": 6
+        },
+        {
+            "level": 24,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6400000,
+            "time": "1d",
+            "hero_hall": 6
+        },
+        {
+            "level": 25,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6500000,
+            "time": "1d",
+            "hero_hall": 6
+        },
+        {
+            "level": 26,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6600000,
+            "time": "1d 12h",
+            "hero_hall": 6
+        },
+        {
+            "level": 27,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6700000,
+            "time": "1d 12h",
+            "hero_hall": 6
+        },
+        {
+            "level": 28,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6800000,
+            "time": "1d 12h",
+            "hero_hall": 6
+        },
+        {
+            "level": 29,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 6900000,
+            "time": "1d 12h",
+            "hero_hall": 6
+        },
+        {
+            "level": 30,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7000000,
+            "time": "1d 12h",
+            "hero_hall": 6
+        },
+        {
+            "level": 31,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7100000,
+            "time": "2d",
+            "hero_hall": 6
+        },
+        {
+            "level": 32,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7200000,
+            "time": "2d",
+            "hero_hall": 6
+        },
+        {
+            "level": 33,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7300000,
+            "time": "2d",
+            "hero_hall": 6
+        },
+        {
+            "level": 34,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7400000,
+            "time": "2d",
+            "hero_hall": 6
+        },
+        {
+            "level": 35,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7500000,
+            "time": "2d",
+            "hero_hall": 6
+        },
+        {
+            "level": 36,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7600000,
+            "time": "2d",
+            "hero_hall": 6
+        },
+        {
+            "level": 37,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7700000,
+            "time": "2d",
+            "hero_hall": 6
+        },
+        {
+            "level": 38,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7800000,
+            "time": "2d",
+            "hero_hall": 6
+        },
+        {
+            "level": 39,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 7900000,
+            "time": "2d",
+            "hero_hall": 6
+        },
+        {
+            "level": 40,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 8000000,
+            "time": "2d",
+            "hero_hall": 6
+        },
+        {
+            "level": 41,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 8300000,
+            "time": "3d",
+            "hero_hall": 7
+        },
+        {
+            "level": 42,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 8600000,
+            "time": "3d",
+            "hero_hall": 7
+        },
+        {
+            "level": 43,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 8900000,
+            "time": "3d",
+            "hero_hall": 7
+        },
+        {
+            "level": 44,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 9200000,
+            "time": "3d",
+            "hero_hall": 7
+        },
+        {
+            "level": 45,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 9500000,
+            "time": "3d",
+            "hero_hall": 7
+        },
+        {
+            "level": 46,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 9800000,
+            "time": "3d",
+            "hero_hall": 7
+        },
+        {
+            "level": 47,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 10100000,
+            "time": "3d",
+            "hero_hall": 7
+        },
+        {
+            "level": 48,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 10400000,
+            "time": "3d",
+            "hero_hall": 7
+        },
+        {
+            "level": 49,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 10700000,
+            "time": "3d",
+            "hero_hall": 7
+        },
+        {
+            "level": 50,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 11000000,
+            "time": "3d",
+            "hero_hall": 7
+        },
+        {
+            "level": 51,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 11400000,
+            "time": "4d",
+            "hero_hall": 8
+        },
+        {
+            "level": 52,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 11800000,
+            "time": "4d",
+            "hero_hall": 8
+        },
+        {
+            "level": 53,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 12200000,
+            "time": "4d",
+            "hero_hall": 8
+        },
+        {
+            "level": 54,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 12600000,
+            "time": "4d",
+            "hero_hall": 8
+        },
+        {
+            "level": 55,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 13000000,
+            "time": "4d",
+            "hero_hall": 8
+        },
+        {
+            "level": 56,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 13400000,
+            "time": "5d",
+            "hero_hall": 8
+        },
+        {
+            "level": 57,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 13800000,
+            "time": "5d",
+            "hero_hall": 8
+        },
+        {
+            "level": 58,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 14200000,
+            "time": "5d",
+            "hero_hall": 8
+        },
+        {
+            "level": 59,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 14600000,
+            "time": "5d",
+            "hero_hall": 8
+        },
+        {
+            "level": 60,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 15000000,
+            "time": "5d",
+            "hero_hall": 8
+        },
+        {
+            "level": 61,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 15500000,
+            "time": "6d",
+            "hero_hall": 9
+        },
+        {
+            "level": 62,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 16000000,
+            "time": "6d",
+            "hero_hall": 9
+        },
+        {
+            "level": 63,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 16500000,
+            "time": "6d",
+            "hero_hall": 9
+        },
+        {
+            "level": 64,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 17000000,
+            "time": "6d",
+            "hero_hall": 9
+        },
+        {
+            "level": 65,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 17500000,
+            "time": "6d",
+            "hero_hall": 9
+        },
+        {
+            "level": 66,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 18000000,
+            "time": "7d",
+            "hero_hall": 10
+        },
+        {
+            "level": 67,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 18500000,
+            "time": "7d",
+            "hero_hall": 10
+        },
+        {
+            "level": 68,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 19000000,
+            "time": "7d",
+            "hero_hall": 10
+        },
+        {
+            "level": 69,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 19500000,
+            "time": "7d",
+            "hero_hall": 10
+        },
+        {
+            "level": 70,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 20000000,
+            "time": "7d 12h",
+            "hero_hall": 10
+        },
+        {
+            "level": 71,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 20500000,
+            "time": "8d",
+            "hero_hall": 11
+        },
+        {
+            "level": 72,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 21000000,
+            "time": "8d",
+            "hero_hall": 11
+        },
+        {
+            "level": 73,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 21500000,
+            "time": "8d",
+            "hero_hall": 11
+        },
+        {
+            "level": 74,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 22000000,
+            "time": "8d",
+            "hero_hall": 11
+        },
+        {
+            "level": 75,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 22500000,
+            "time": "8d",
+            "hero_hall": 11
+        },
+        {
+            "level": 76,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 24000000,
+            "time": "8d",
+            "hero_hall": 12
+        },
+        {
+            "level": 77,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 25500000,
+            "time": "8d",
+            "hero_hall": 12
+        },
+        {
+            "level": 78,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 27000000,
+            "time": "8d",
+            "hero_hall": 12
+        },
+        {
+            "level": 79,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 28500000,
+            "time": "8d",
+            "hero_hall": 12
+        },
+        {
+            "level": 80,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 30000000,
+            "time": "8d",
+            "hero_hall": 12
+        }
+    ]
+}

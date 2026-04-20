@@ -1,0 +1,43 @@
+{
+    "id": 4000097,
+    "name": "견습생 워든",
+    "dark_barracks": 1,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 90000,
+            "time": "6d",
+            "laboratory": 11
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 135000,
+            "time": "7d 12h",
+            "laboratory": 12
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 160000,
+            "time": "8d",
+            "laboratory": 13
+        }
+    ]
+}

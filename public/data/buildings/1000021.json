@@ -1,0 +1,120 @@
+{
+    "id": 1000021,
+    "name": "대형 석궁",
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1000000,
+            "time": "12h",
+            "town_hall": 9
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 1200000,
+            "time": "1d",
+            "town_hall": 9
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 2400000,
+            "time": "2d",
+            "town_hall": 9
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 2500000,
+            "time": "3d",
+            "town_hall": 10
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 3900000,
+            "time": "3d 12h",
+            "town_hall": 11
+        },
+        {
+            "level": 6,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 5000000,
+            "time": "4d",
+            "town_hall": 12
+        },
+        {
+            "level": 7,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 6000000,
+            "time": "4d 6h",
+            "town_hall": 13
+        },
+        {
+            "level": 8,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 7000000,
+            "time": "4d 12h",
+            "town_hall": 13
+        },
+        {
+            "level": 9,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 9000000,
+            "time": "5d",
+            "town_hall": 14
+        },
+        {
+            "level": 10,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 9500000,
+            "time": "5d 12h",
+            "town_hall": 15
+        },
+        {
+            "level": 11,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 10000000,
+            "time": "6d",
+            "town_hall": 16
+        },
+        {
+            "level": 12,
+            "resource_type": [
+                "gold"
+            ],
+            "cost": 16000000,
+            "time": "10d 12h",
+            "town_hall": 17
+        }
+    ],
+    "available": [
+        9,
+        9,
+        10,
+        11
+    ]
+}
