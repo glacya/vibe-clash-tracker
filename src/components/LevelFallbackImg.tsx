@@ -15,7 +15,7 @@ export function LevelFallbackImg({ category, id, lvl, className }: Props) {
   return (
     <img
       className={className}
-      src={`/images/${category}/${id}/${tryLvl}.png`}
+      src={`${import.meta.env.BASE_URL}images/${category}/${id}/${tryLvl}.png`}
       alt=""
       onError={(e) => {
         if (tryLvl > 1) {

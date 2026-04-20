@@ -151,7 +151,7 @@ export function VillageOverview({ snapshot, nickname }: Props) {
             <div className="overview__badge overview__badge--th">
               <img
                 className="overview__badge-img overview__badge-img--th"
-                src={`/images/buildings/${TOWN_HALL_ID}/${thLevel}.png`}
+                src={`${import.meta.env.BASE_URL}images/buildings/${TOWN_HALL_ID}/${thLevel}.png`}
                 alt=""
               />
               <span className="overview__badge-label--th">{thLevel}홀</span>
@@ -159,7 +159,7 @@ export function VillageOverview({ snapshot, nickname }: Props) {
             <div className="overview__badge">
               <img
                 className="overview__badge-img"
-                src="/images/buildings/1000015/1.png"
+                src={`${import.meta.env.BASE_URL}images/buildings/1000015/1.png`}
                 alt=""
               />
               <span className="overview__badge-label">× {builderCount}</span>

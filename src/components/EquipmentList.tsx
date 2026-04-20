@@ -50,7 +50,7 @@ function OreDisplay({ cost, oreType }: { cost: number, oreType: OreType}) {
   return (
     <span className="cost-display">
       <span className="cost-display__num" style={{ color }}>{formatCost(cost)}</span>
-      <img className="cost-icon" src={`/images/common/${oreType}_ore.png`} alt={oreType}/>
+      <img className="cost-icon" src={`${import.meta.env.BASE_URL}images/common/${oreType}_ore.png`} alt={oreType}/>
     </span>
   )
 }
@@ -137,7 +137,7 @@ function EquipmentRow({
         <div className="bld-row__img-col">
           <img
             className="bld-row__img"
-            src={`/images/equipment/${id}.png`}
+            src={`${import.meta.env.BASE_URL}images/equipment/${id}.png`}
             alt=""
             onError={(e) => { (e.currentTarget as HTMLImageElement).style.visibility = 'hidden'; }}
           />

@@ -106,7 +106,7 @@ function CostDisplay({ cost, resourceType }: { cost: number; resourceType: Resou
   return (
     <span className="cost-display">
       <span className="cost-display__num" style={{ color }}>{formatCost(cost)}</span>
-      <img className="cost-icon" src={`/images/common/${resourceType}.png`} alt={resourceType} />
+      <img className="cost-icon" src={`${import.meta.env.BASE_URL}images/common/${resourceType}.png`} alt={resourceType} />
     </span>
   );
 }
@@ -157,7 +157,7 @@ function BuildingRow({
       <div className="bld-row__img-col">
         <div className="bld-row__img-wrapper">
           <LevelFallbackImg category="buildings" id={id} lvl={lvl} className="bld-row__img" />
-          {gearUp && <img className="bld-row__gear-up-icon" src="/images/common/gear.svg" alt="개조됨" />}
+          {gearUp && <img className="bld-row__gear-up-icon" src={`${import.meta.env.BASE_URL}images/common/gear.svg`} alt="개조됨" />}
         </div>
         <LevelLabel lvl={lvl} gatedMax={maxLevel ?? 0} absoluteMax={absoluteMax} />
       </div>
@@ -274,12 +274,12 @@ function WallDualCostDisplay({ cost }: { cost: number }) {
     <div className="wall-dual-cost">
       <span className="cost-display">
         <span className="cost-display__num" style={{ color: RESOURCE_COLOR.gold }}>{formatCost(cost)}</span>
-        <img className="cost-icon" src="/images/common/gold.png" alt="gold" />
+        <img className="cost-icon" src={`${import.meta.env.BASE_URL}images/common/gold.png`} alt="gold" />
       </span>
       <span className="wall-dual-cost__sep">/</span>
       <span className="cost-display">
         <span className="cost-display__num" style={{ color: RESOURCE_COLOR.elixir }}>{formatCost(cost)}</span>
-        <img className="cost-icon" src="/images/common/elixir.png" alt="elixir" />
+        <img className="cost-icon" src={`${import.meta.env.BASE_URL}images/common/elixir.png`} alt="elixir" />
       </span>
     </div>
   );

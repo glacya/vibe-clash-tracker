@@ -46,7 +46,7 @@ function CostDisplay({ cost, resourceType }: { cost: number; resourceType: Resou
   return (
     <span className="cost-display">
       <span className="cost-display__num" style={{ color }}>{formatCost(cost)}</span>
-      <img className="cost-icon" src={`/images/common/${resourceType}.png`} alt={resourceType} />
+      <img className="cost-icon" src={`${import.meta.env.BASE_URL}images/common/${resourceType}.png`} alt={resourceType} />
     </span>
   );
 }
@@ -117,7 +117,7 @@ function PetRow({ id, lvl, data, petHouseLevel, goldPassMultiplier = 1 }: { id: 
         <div className="bld-row__img-col">
           <img
             className="bld-row__img"
-            src={`/images/pets/${id}.png`}
+            src={`${import.meta.env.BASE_URL}images/pets/${id}.png`}
             alt=""
             onError={(e) => { (e.currentTarget as HTMLImageElement).style.visibility = 'hidden'; }}
           />
