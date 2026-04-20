@@ -54,7 +54,7 @@ export function useItemData<T = unknown>(category: string, id: number | string):
     let cancelled = false;
     setLoading(true);
 
-    fetch(`/data/${category}/${id}.json`)
+    fetch(`/public/data/${category}/${id}.json`)
       .then((res) => {
         if (!res.ok) throw new Error('not found');
         return res.json();
