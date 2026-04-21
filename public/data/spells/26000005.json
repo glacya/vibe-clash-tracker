@@ -1,7 +1,7 @@
 {
     "id": 26000005,
     "name": "얼음 마법",
-    "spell_factory": 1,
+    "spell_factory": 4,
     "upgrade": [
         {
             "level": 1,

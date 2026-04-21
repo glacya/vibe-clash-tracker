@@ -1,7 +1,7 @@
 {
     "id": 26000053,
     "name": "복귀 마법",
-    "spell_factory": 1,
+    "spell_factory": 7,
     "upgrade": [
         {
             "level": 1,

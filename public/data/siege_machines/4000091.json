@@ -1,7 +1,7 @@
 {
     "id": 4000091,
     "name": "화염 투척기",
-    "workshop": 1,
+    "workshop": 6,
     "upgrade": [
         {
             "level": 1,

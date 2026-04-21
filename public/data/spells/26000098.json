@@ -1,4 +1,52 @@
 {
     "id": 26000098,
-    "upgrade": []
+    "name": "소생 마법",
+    "spell_factory": 8,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 18000000,
+            "time": "8d",
+            "laboratory": 13
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 19000000,
+            "time": "10d 12h",
+            "laboratory": 14
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 20000000,
+            "time": "11d 12h",
+            "laboratory": 15
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "elixir"
+            ],
+            "cost": 29500000,
+            "time": "16d",
+            "laboratory": 16
+        }
+    ]
 }

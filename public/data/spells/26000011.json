@@ -1,7 +1,7 @@
 {
     "id": 26000011,
     "name": "신속 마법",
-    "dark_spell_factory": 1,
+    "dark_spell_factory": 3,
     "upgrade": [
         {
             "level": 1,

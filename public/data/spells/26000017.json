@@ -1,7 +1,7 @@
 {
     "id": 26000017,
     "name": "해골 마법",
-    "dark_spell_factory": 1,
+    "dark_spell_factory": 4,
     "upgrade": [
         {
             "level": 1,

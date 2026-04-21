@@ -105,8 +105,8 @@
 26000035,Invisibility_Spell
 26000053,Recall_Spell
 26000070,Overgrowth_Spell
-26000098,null
-26000109,null
+26000098,Revive_Spell
+26000109,Ice_Block_Spell
 26000120,Totem_Spell
 73000000,L.A.S.S.I
 73000001,Electro_Owl
@@ -132,7 +132,7 @@
 90000009,Hog_Rider_Puppet
 90000010,Giant_Gauntlet
 90000011,Vampstache
-90000012,null
+90000012,Haste_Vial
 90000013,Rocket_Spear
 90000014,Spiky_Ball
 90000015,Frozen_Arrow
@@ -157,5 +157,5 @@
 90000051,Fire_Heart
 90000052,Stick_Horse
 90000053,Rocket_Backpack
-90000056,null
+90000056,Stun_Blaster
 90000057,Flame_Blower

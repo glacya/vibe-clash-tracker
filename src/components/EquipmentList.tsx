@@ -1,3 +1,4 @@
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import type { Equipment } from '../types/village';
 import type { EquipmentCostEntry, EquipmentCostFile, OreType } from '../types/buildingData';
 import { useItemData } from '../hooks/useItemData';
@@ -12,6 +13,8 @@ const ORE_COLOR: Record<string, string> = {
 };
 
 const ORE_KEYS = ['shiny', 'glowy', 'starry'] as const;
+
+type OreSum = Record<OreType, number>;
 
 function formatCost(n: number): string {
   return n.toLocaleString('en-US');
@@ -34,7 +37,7 @@ function hasAnyCost(e: EquipmentCostEntry): boolean {
   return e.cost.shiny > 0 || e.cost.glowy > 0 || e.cost.starry > 0;
 }
 
-function sumOre(entries: EquipmentCostEntry[]): Record<string, number> {
+function sumOre(entries: EquipmentCostEntry[]): OreSum {
   return entries.reduce(
     (acc, e) => ({
       shiny: acc.shiny + e.cost.shiny,
@@ -45,14 +48,21 @@ function sumOre(entries: EquipmentCostEntry[]): Record<string, number> {
   );
 }
 
-function OreDisplay({ cost, oreType }: { cost: number, oreType: OreType}) {
+function aggregateOreSums(all: OreSum[]): OreSum {
+  return all.reduce(
+    (acc, s) => ({ shiny: acc.shiny + s.shiny, glowy: acc.glowy + s.glowy, starry: acc.starry + s.starry }),
+    { shiny: 0, glowy: 0, starry: 0 },
+  );
+}
+
+function OreDisplay({ cost, oreType }: { cost: number; oreType: OreType }) {
   const color = ORE_COLOR[oreType];
   return (
     <span className="cost-display">
       <span className="cost-display__num" style={{ color }}>{formatCost(cost)}</span>
-      <img className="cost-icon" src={`${import.meta.env.BASE_URL}images/common/${oreType}_ore.png`} alt={oreType}/>
+      <img className="cost-icon" src={`${import.meta.env.BASE_URL}images/common/${oreType}_ore.png`} alt={oreType} />
     </span>
-  )
+  );
 }
 
 function OreCostBlock({ entry }: { entry: EquipmentCostEntry }) {
@@ -62,7 +72,7 @@ function OreCostBlock({ entry }: { entry: EquipmentCostEntry }) {
     <div className="cost-time-block">
       {types.map((t) => (
         <div key={t} className="cost-time-block__row">
-          <OreDisplay cost={entry.cost[t]} oreType={t}/>
+          <OreDisplay cost={entry.cost[t]} oreType={t} />
         </div>
       ))}
     </div>
@@ -77,9 +87,26 @@ function OreSumBlock({ entries }: { entries: EquipmentCostEntry[] }) {
     <div className="cost-time-block">
       {types.map((t) => (
         <div key={t} className="cost-time-block__row">
-          <OreDisplay cost={sum[t]} oreType={t}/>
+          <OreDisplay cost={sum[t]} oreType={t} />
         </div>
       ))}
+    </div>
+  );
+}
+
+function ListSummaryBar({ total }: { total: OreSum }) {
+  const types = ORE_KEYS.filter((t) => total[t] > 0);
+  if (types.length === 0) return null;
+  return (
+    <div className="list-summary">
+      <span className="list-summary__label">전체 합산</span>
+      <div className="list-summary__costs">
+        {types.map((t) => (
+          <div key={t} className="list-summary__item">
+            <OreDisplay cost={total[t]} oreType={t} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
@@ -99,12 +126,16 @@ function EquipmentRow({
   smithLevel,
   costTable,
   rarity,
+  isOwned,
+  onToggleOwned,
 }: {
   id: number;
   lvl: number;
   smithLevel: number;
   costTable: EquipmentCostEntry[];
   rarity: 'normal' | 'epic';
+  isOwned: boolean;
+  onToggleOwned?: () => void;
 }) {
   const name = EQUIPMENT_NAMES[id] ?? `ID ${id}`;
   const maxLevel = getMaxLevel(costTable, smithLevel);
@@ -113,6 +144,9 @@ function EquipmentRow({
   const remainingWithCost = remaining.filter(hasAnyCost);
   const next = remaining[0] ?? null;
   const status = getLevelStatus(lvl, maxLevel, absoluteMax);
+
+  const showToggle = rarity === 'epic' && lvl === 1;
+  const hideContent = showToggle && !isOwned;
 
   return (
     <div className="bld-group">
@@ -123,50 +157,73 @@ function EquipmentRow({
             {RARITY_LABEL[rarity]}
           </span>
         </span>
-        {/* <div className="bld-group__total">
-          {remainingWithCost.length > 0 ? <OreSumBlock entries={remainingWithCost} /> : null}
-        </div> */}
-      </div>
-      <div className="bld-row bld-row--header">
-        <div className="bld-row__img-col" />
-        <div className="bld-row__meter-col bld-row__col-label">진행도</div>
-        <div className="bld-row__next-col bld-row__col-label">다음 업그레이드 시</div>
-        <div className="bld-row__total-col bld-row__col-label">최대 업그레이드 시</div>
-      </div>
-      <div className="bld-row">
-        <div className="bld-row__img-col">
-          <img
-            className="bld-row__img"
-            src={`${import.meta.env.BASE_URL}images/equipment/${id}.png`}
-            alt=""
-            onError={(e) => { (e.currentTarget as HTMLImageElement).style.visibility = 'hidden'; }}
-          />
-          <LevelLabel lvl={lvl} gatedMax={maxLevel} absoluteMax={absoluteMax} />
+        <div className="bld-group__total">
+          {showToggle ? (
+            <div className="equip-owned-toggle">
+              <button
+                className={`equip-owned-btn${isOwned ? ' equip-owned-btn--active' : ''}`}
+                onClick={!isOwned ? onToggleOwned : undefined}
+                disabled={isOwned}
+              >
+                보유
+              </button>
+              <button
+                className={`equip-owned-btn${!isOwned ? ' equip-owned-btn--active' : ''}`}
+                onClick={isOwned ? onToggleOwned : undefined}
+                disabled={!isOwned}
+              >
+                미보유
+              </button>
+            </div>
+          ) : null}
         </div>
-        <div className="bld-row__meter-col">
-          {maxLevel > 0 ? (
-            <ProgressMeter current={lvl} max={maxLevel} absoluteMax={absoluteMax} />
-          ) : (
-            <span className="bld-row__no-data">데이터 없음</span>
+      </div>
+      {!hideContent && (
+        <>
+          {status === 'normal' && (
+            <div className="bld-row bld-row--header">
+              <div className="bld-row__img-col" />
+              <div className="bld-row__meter-col bld-row__col-label">진행도</div>
+              <div className="bld-row__next-col bld-row__col-label">다음 업그레이드 시</div>
+              <div className="bld-row__total-col bld-row__col-label">최대 업그레이드 시</div>
+            </div>
           )}
-        </div>
-        {status !== 'normal' ? (
-          <div className={`bld-row__max-col bld-row__max-col--${status}`}>
-            {status === 'th-max' ? '현재 최대' : '최대'}
+          <div className="bld-row">
+            <div className="bld-row__img-col">
+              <img
+                className="bld-row__img"
+                src={`${import.meta.env.BASE_URL}images/equipment/${id}.png`}
+                alt=""
+                onError={(e) => { (e.currentTarget as HTMLImageElement).style.visibility = 'hidden'; }}
+              />
+              <LevelLabel lvl={lvl} gatedMax={maxLevel} absoluteMax={absoluteMax} />
+            </div>
+            <div className="bld-row__meter-col">
+              {maxLevel > 0 ? (
+                <ProgressMeter current={lvl} max={maxLevel} absoluteMax={absoluteMax} />
+              ) : (
+                <span className="bld-row__no-data">데이터 없음</span>
+              )}
+            </div>
+            {status !== 'normal' ? (
+              <div className={`bld-row__max-col bld-row__max-col--${status}`}>
+                {status === 'th-max' ? '현재 홀의 최대 레벨' : '최대 레벨!'}
+              </div>
+            ) : (
+              <>
+                <div className="bld-row__next-col">
+                  {next && hasAnyCost(next)
+                    ? <OreCostBlock entry={next} />
+                    : <span className="bld-row__at-max">—</span>}
+                </div>
+                <div className="bld-row__total-col">
+                  {remainingWithCost.length > 0 && <OreSumBlock entries={remainingWithCost} />}
+                </div>
+              </>
+            )}
           </div>
-        ) : (
-          <>
-            <div className="bld-row__next-col">
-              {next && hasAnyCost(next)
-                ? <OreCostBlock entry={next} />
-                : <span className="bld-row__at-max">—</span>}
-            </div>
-            <div className="bld-row__total-col">
-              {remainingWithCost.length > 0 && <OreSumBlock entries={remainingWithCost} />}
-            </div>
-          </>
-        )}
-      </div>
+        </>
+      )}
     </div>
   );
 }
@@ -175,17 +232,62 @@ interface Props {
   equipment: Equipment[];
   smithLevel: number;
   heroId: number;
+  snapshotId: number;
 }
 
-export function EquipmentList({ equipment, smithLevel, heroId }: Props) {
-  const { data: commonCosts, loading: loadingCommon } = useItemData<EquipmentCostFile>(
-    'equipment',
-    'common',
-  );
-  const { data: epicCosts, loading: loadingEpic } = useItemData<EquipmentCostFile>(
-    'equipment',
-    'epic',
-  );
+const STORAGE_KEY_PREFIX = 'unowned-epic-';
+
+function loadUnowned(snapshotId: number): Set<number> {
+  try {
+    const raw = localStorage.getItem(`${STORAGE_KEY_PREFIX}${snapshotId}`);
+    if (raw) return new Set(JSON.parse(raw) as number[]);
+  } catch { /* ignore */ }
+  return new Set();
+}
+
+function saveUnowned(snapshotId: number, unowned: Set<number>) {
+  try {
+    localStorage.setItem(`${STORAGE_KEY_PREFIX}${snapshotId}`, JSON.stringify([...unowned]));
+  } catch { /* ignore */ }
+}
+
+export function EquipmentList({ equipment, smithLevel, heroId, snapshotId }: Props) {
+  const { data: commonCosts, loading: loadingCommon } = useItemData<EquipmentCostFile>('equipment', 'common');
+  const { data: epicCosts, loading: loadingEpic } = useItemData<EquipmentCostFile>('equipment', 'epic');
+
+  const [unownedEpic, setUnownedEpic] = useState<Set<number>>(() => loadUnowned(snapshotId));
+
+  useEffect(() => {
+    setUnownedEpic(loadUnowned(snapshotId));
+  }, [snapshotId]);
+
+  const listTotal = useMemo(() => {
+    if (!commonCosts || !epicCosts) return { shiny: 0, glowy: 0, starry: 0 } as OreSum;
+    const section = EQUIPMENT_HERO_ORDER.find((s) => s.heroId === heroId);
+    if (!section) return { shiny: 0, glowy: 0, starry: 0 } as OreSum;
+    const levelMap = new Map<number, number>(equipment.map((e) => [e.data, e.lvl]));
+    return aggregateOreSums(
+      section.equipIds
+        .filter((id) => levelMap.has(id))
+        .map((id) => {
+          const isNormal = NORMAL_EQUIPMENT_IDS.has(id);
+          const costTable = isNormal ? commonCosts.upgrade : epicCosts.upgrade;
+          const lvl = levelMap.get(id)!;
+          const hideContent = !isNormal && lvl === 1 && unownedEpic.has(id);
+          if (hideContent) return { shiny: 0, glowy: 0, starry: 0 } as OreSum;
+          return sumOre(getRemainingUpgrades(costTable, lvl, smithLevel).filter(hasAnyCost));
+        }),
+    );
+  }, [commonCosts, epicCosts, equipment, heroId, smithLevel, unownedEpic]);
+
+  const toggleOwned = useCallback((id: number) => {
+    setUnownedEpic((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      saveUnowned(snapshotId, next);
+      return next;
+    });
+  }, [snapshotId]);
 
   if (loadingCommon || loadingEpic) {
     return <div className="bld-empty">데이터 로딩 중...</div>;
@@ -206,10 +308,12 @@ export function EquipmentList({ equipment, smithLevel, heroId }: Props) {
 
   return (
     <div className="bld-list">
+      <ListSummaryBar total={listTotal} />
       {visible.map((id) => {
-        const costTable = NORMAL_EQUIPMENT_IDS.has(id)
-          ? commonCosts.upgrade
-          : epicCosts.upgrade;
+        const isNormal = NORMAL_EQUIPMENT_IDS.has(id);
+        const costTable = isNormal ? commonCosts.upgrade : epicCosts.upgrade;
+        const rarity = isNormal ? 'normal' : 'epic';
+        const isOwned = !unownedEpic.has(id);
         return (
           <EquipmentRow
             key={id}
@@ -217,7 +321,9 @@ export function EquipmentList({ equipment, smithLevel, heroId }: Props) {
             lvl={levelMap.get(id)!}
             smithLevel={smithLevel}
             costTable={costTable}
-            rarity={NORMAL_EQUIPMENT_IDS.has(id) ? 'normal' : 'epic'}
+            rarity={rarity}
+            isOwned={isOwned}
+            onToggleOwned={() => toggleOwned(id)}
           />
         );
       })}

@@ -1,6 +1,7 @@
 {
     "id": 26000120,
     "name": "토템 마법",
+    "spell_factory": 9,
     "upgrade": [
         {
             "level": 1,

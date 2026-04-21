@@ -611,19 +611,18 @@ body {
 
 .overview__badges {
   display: flex;
-  align-items: flex-end;
-  gap: 16px;
+  align-items: center;
+  gap: 32px;
 }
 
 .overview__badge {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
 }
 
 .overview__badge--th {
-  flex-direction: column;
-  align-items: center;
   gap: 4px;
 }
 
@@ -1102,4 +1101,250 @@ body {
   margin-left: 12px;
   color: var(--color-text-sub);
   font-size: 0.8rem;
+}
+
+/* ============================
+   초희귀 장비 보유 토글
+   ============================ */
+.equip-owned-toggle {
+  display: flex;
+  gap: 6px;
+}
+
+.equip-owned-btn {
+  padding: 3px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.equip-owned-btn--active {
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  border-color: var(--color-primary);
+  cursor: default;
+}
+
+/* ============================
+   행 이름 레이블 (portrait 전용)
+   ============================ */
+.bld-row__name-row {
+  display: none;
+}
+
+/* ============================
+   탭별 전체 합산 배너
+   ============================ */
+.list-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  margin-bottom: 16px;
+}
+
+.list-summary__label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-text-muted);
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+
+.list-summary__costs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+}
+
+.list-summary__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.list-summary__time {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+/* ============================
+   Landscape: 화면 크기 비례 폰트
+   ============================ */
+@media (orientation: landscape) {
+  html {
+    /* 1440px 기준 16px = 1.11vw; clamp로 극단 방지 */
+    font-size: clamp(12px, 1.11vw, 18px);
+  }
+}
+
+/* ============================
+   Portrait (세로 화면) 레이아웃
+   ============================ */
+@media (orientation: portrait) {
+  /* ── 폰트 & 이미지 스케일 (92%) ── */
+  html {
+    font-size: 92%;
+  }
+
+  .overview__badge-img--th { width: 68px; height: 68px; }
+  .overview__badge-img     { width: 27px; height: 27px; }
+  .bld-row__img            { width: 46px; height: 46px; }
+  .bld-row__img-placeholder{ width: 46px; height: 46px; }
+
+  /* ── 헤더: 크레딧 버튼 숨김, 타이틀 클릭 가능 ── */
+  .app__credit-btn { display: none; }
+  .app__title      { cursor: pointer; }
+
+  /* ── 앱 전체: overflow: visible 유지해야 sticky 동작 ── */
+  .app {
+    height: auto;
+    min-height: 100dvh;
+    overflow: visible;
+  }
+
+  /* ── Body: 세로 스택, 가로 스크롤 차단 ── */
+  .app__body {
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  /* ── 마을 탭 사이드바: 상단 가로 전체 ── */
+  .app__village-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    overflow-y: visible;
+  }
+
+  .village-tabs { height: auto; }
+
+  /* ── 메인: 여백 제거, overflow 해제 ── */
+  .app__main {
+    overflow: visible;
+    padding: 0;
+    gap: 0;
+  }
+
+  /* ── 콘텐츠: 세로 스택 ── */
+  .app__content {
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  /* ── 스냅샷 사이드바: 가로 전체 ── */
+  .app__snapshot-sidebar {
+    width: 100%;
+    overflow-y: visible;
+  }
+
+  /* ── 상세 영역: body 스크롤에 위임 ── */
+  .app__detail { overflow-y: visible; }
+
+  /* ── 개요 카드: 가로 꽉 채움 ── */
+  .overview {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  /* ── 개요 헤더: 세로 배치로 마을 이름 ellipsis 방지 ── */
+  .overview__header {
+    border-radius: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .overview__title-group { width: 100%; }
+
+  .overview__nickname {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  /* ── sticky 탭 컨테이너: 가로 넘침 clip ── */
+  .overview__tabs-sticky {
+    overflow-x: clip;
+  }
+
+  /* ── 탭바: 가로 스크롤, 페이지 가로 스크롤 방지 ── */
+  .content-tabs,
+  .content-tabs--sub {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+
+  .content-tabs::-webkit-scrollbar,
+  .content-tabs--sub::-webkit-scrollbar { display: none; }
+
+  .content-tab { flex-shrink: 0; }
+
+  /* ── bld-row: 3행 그리드 레이아웃 ── */
+  /*
+    [name name name]   ← 1행 (건물/함정 이름+레벨, 영웅/유닛은 빈칸)
+    [img ][meter  ]   ← 2행
+    [img ][next][total]← 3행
+  */
+  .bld-row {
+    grid-template-columns: 58px 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "name  name  name"
+      "img   meter meter"
+      "img   next  total";
+  }
+
+  .bld-row__name-row  { display: block; grid-area: name; padding: 7px 10px 5px; font-size: 0.88rem; font-weight: 700; background: var(--color-bg); border-bottom: 1px solid var(--color-border); }
+  .bld-row__img-col   { grid-area: img;   }
+  .bld-row__meter-col { grid-area: meter; padding: 8px 12px 0; text-align: center; }
+  .bld-row__next-col  { grid-area: next;  padding: 4px 8px; align-self: start; }
+  .bld-row__total-col { grid-area: total; padding: 4px 8px; align-self: start; }
+
+  /* 컬럼 레이블 헤더 행 숨김 (인라인 ::before 로 대체) */
+  .bld-row--header { display: none; }
+
+  /* 인라인 컬럼 레이블 */
+  .bld-row__next-col::before {
+    content: "다음 업그레이드 시";
+    display: block;
+    font-size: 0.62rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    padding-bottom: 3px;
+  }
+
+  .bld-row__total-col::before {
+    content: "최대 업그레이드 시";
+    display: block;
+    font-size: 0.62rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    padding-bottom: 3px;
+  }
+
+  /* 최대 도달 시 next+total 영역 전체 사용 (이제 3행에 위치) */
+  .bld-row__max-col {
+    grid-column: 2 / 4;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

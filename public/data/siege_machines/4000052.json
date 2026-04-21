@@ -1,7 +1,7 @@
 {
     "id": 4000052,
     "name": "전투 비행선",
-    "workshop": 1,
+    "workshop": 2,
     "upgrade": [
         {
             "level": 1,

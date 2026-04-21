@@ -243,7 +243,7 @@ export function VillageOverview({ snapshot, nickname }: Props) {
 
           <div className="overview__panel">
             {villageTab === 'buildings' && buildingTab === 'defense' && (
-              <BuildingList buildings={snapshot.buildings} thLevel={thLevel} allowedIds={DEFENSE_BUILDING_IDS} weaponLevel={weaponLevel} goldPassMultiplier={goldPassMultiplier} />
+              <BuildingList buildings={snapshot.buildings} thLevel={thLevel} allowedIds={DEFENSE_BUILDING_IDS} weaponLevel={weaponLevel} goldPassMultiplier={goldPassMultiplier} excludeWallFromSummary />
             )}
             {villageTab === 'buildings' && buildingTab === 'army-bldg' && (
               <BuildingList
@@ -302,6 +302,7 @@ export function VillageOverview({ snapshot, nickname }: Props) {
                     equipment={snapshot.equipment}
                     smithLevel={smithLevel}
                     heroId={parseInt(equipHeroTab)}
+                    snapshotId={snapshot.timestamp}
                   />
             )}
             {villageTab === 'pets' && (

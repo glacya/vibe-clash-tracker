@@ -112,7 +112,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="app__header">
-        <h1 className="app__title">Vibe Clash Tracker</h1>
+        <h1 className="app__title" onClick={() => setShowCredits(true)}>Vibe Clash Tracker</h1>
         <div className="app__header-actions">
           <button className="app__add-btn" onClick={() => setShowPaste((v) => !v)}>
             {showPaste ? '닫기' : '+ 마을 데이터 추가'}
@@ -152,7 +152,7 @@ export default function App() {
             <div className="app__empty">
               <p>저장된 마을이 없습니다.</p>
               <button className="app__add-btn" onClick={() => setShowPaste(true)}>
-                첫 번째 스냅샷 추가하기
+                첫 번째 마을 데이터 추가하기
               </button>
             </div>
           ) : selectedVillage ? (

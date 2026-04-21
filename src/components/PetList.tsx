@@ -1,3 +1,4 @@
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { Pet } from '../types/village';
 import type { PetDataFile, PetUpgradeEntry, ResourceType } from '../types/buildingData';
 import { useItemData } from '../hooks/useItemData';
@@ -40,6 +41,18 @@ function getRemainingUpgrades(upgrade: PetUpgradeEntry[], currentLevel: number, 
   return upgrade.filter((u) => u.level > currentLevel && u.pet_house <= petHouseLevel);
 }
 
+interface SumEntry { resourceType: ResourceType; cost: number; time: number; }
+
+function aggregateCosts(all: SumEntry[][]): SumEntry[] {
+  const byType = new Map<ResourceType, { cost: number; time: number }>();
+  for (const group of all) {
+    for (const { resourceType, cost, time } of group) {
+      const prev = byType.get(resourceType) ?? { cost: 0, time: 0 };
+      byType.set(resourceType, { cost: prev.cost + cost, time: prev.time + time });
+    }
+  }
+  return [...byType.entries()].map(([resourceType, { cost, time }]) => ({ resourceType, cost, time }));
+}
 
 function CostDisplay({ cost, resourceType }: { cost: number; resourceType: ResourceType }) {
   const color = RESOURCE_COLOR[resourceType];
@@ -82,16 +95,36 @@ function ToMaxBlock({ upgrades, multiplier = 1 }: { upgrades: PetUpgradeEntry[];
       {[...totals.entries()].map(([rt, { cost, time }]) => (
         <div key={rt} className="cost-time-block__row">
           <CostDisplay cost={Math.round(cost * multiplier)} resourceType={rt} />
-          {time > 0 && (
-            <span className="cost-time-block__time">{formatTime(Math.round(time * multiplier))}</span>
-          )}
+          {time > 0 && <span className="cost-time-block__time">{formatTime(Math.round(time * multiplier))}</span>}
         </div>
       ))}
     </div>
   );
 }
 
-function PetRow({ id, lvl, data, petHouseLevel, goldPassMultiplier = 1 }: { id: number; lvl: number; data: PetDataFile; petHouseLevel: number; goldPassMultiplier?: number }) {
+function ListSummaryBar({ totals }: { totals: SumEntry[] }) {
+  if (totals.length === 0) return null;
+  return (
+    <div className="list-summary">
+      <span className="list-summary__label">전체 합산</span>
+      <div className="list-summary__costs">
+        {totals.map((ct) => (
+          <div key={ct.resourceType} className="list-summary__item">
+            <CostDisplay cost={ct.cost} resourceType={ct.resourceType} />
+            {ct.time > 0 && <span className="list-summary__time">{formatTime(ct.time)}</span>}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function PetRow({
+  id, lvl, data, petHouseLevel, goldPassMultiplier = 1, onGroupTotal,
+}: {
+  id: number; lvl: number; data: PetDataFile; petHouseLevel: number;
+  goldPassMultiplier?: number; onGroupTotal?: (id: number, costs: SumEntry[]) => void;
+}) {
   const { upgrade } = data;
   const maxLevel = getMaxLevelForPH(upgrade, petHouseLevel);
   const absoluteMax = getAbsoluteMax(upgrade);
@@ -99,20 +132,43 @@ function PetRow({ id, lvl, data, petHouseLevel, goldPassMultiplier = 1 }: { id: 
   const nextUpgrade = remaining[0] ?? null;
   const status = getLevelStatus(lvl, maxLevel, absoluteMax);
 
+  const toMax: SumEntry[] = [];
+  {
+    const totals = new Map<ResourceType, { cost: number; time: number }>();
+    for (const u of remaining) {
+      if (u.cost === null) continue;
+      for (const rt of u.resource_type) {
+        const p = totals.get(rt) ?? { cost: 0, time: 0 };
+        totals.set(rt, { cost: p.cost + u.cost, time: p.time + (u.time ?? 0) });
+      }
+    }
+    for (const [resourceType, { cost, time }] of totals) {
+      toMax.push({ resourceType, cost: Math.round(cost * goldPassMultiplier), time: Math.round(time * goldPassMultiplier) });
+    }
+  }
+
+  const onGroupTotalRef = useRef(onGroupTotal);
+  useEffect(() => { onGroupTotalRef.current = onGroupTotal; });
+  const totalKey = toMax.map((c) => `${c.resourceType}:${c.cost}`).join(',');
+  useEffect(() => {
+    onGroupTotalRef.current?.(id, toMax);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id, totalKey]);
+
   return (
     <div className="bld-group">
       <div className="bld-group__header">
         <span className="bld-group__name">{data.name} Lv.{Math.max(1, lvl)}</span>
-        {/* <div className="bld-group__total">
-          {remaining.length > 0 ? <ToMaxBlock upgrades={remaining} /> : null}
-        </div> */}
+        {/* 절대로 여기에 component 추가 금지.*/}
       </div>
-      <div className="bld-row bld-row--header">
-        <div className="bld-row__img-col" />
-        <div className="bld-row__meter-col bld-row__col-label">진행도</div>
-        <div className="bld-row__next-col bld-row__col-label">다음 업그레이드 시</div>
-        <div className="bld-row__total-col bld-row__col-label">최대 업그레이드 시</div>
-      </div>
+      {status === 'normal' && (
+        <div className="bld-row bld-row--header">
+          <div className="bld-row__img-col" />
+          <div className="bld-row__meter-col bld-row__col-label">진행도</div>
+          <div className="bld-row__next-col bld-row__col-label">다음 업그레이드 시</div>
+          <div className="bld-row__total-col bld-row__col-label">최대 업그레이드 시</div>
+        </div>
+      )}
       <div className="bld-row">
         <div className="bld-row__img-col">
           <img
@@ -130,7 +186,7 @@ function PetRow({ id, lvl, data, petHouseLevel, goldPassMultiplier = 1 }: { id: 
         </div>
         {status !== 'normal' ? (
           <div className={`bld-row__max-col bld-row__max-col--${status}`}>
-            {status === 'th-max' ? '현재 최대' : '최대'}
+            {status === 'th-max' ? '현재 홀의 최대 레벨' : '최대 레벨!'}
           </div>
         ) : (
           <>
@@ -149,34 +205,46 @@ function PetRow({ id, lvl, data, petHouseLevel, goldPassMultiplier = 1 }: { id: 
   );
 }
 
-function PetEntry({ id, lvl, petHouseLevel, goldPassMultiplier }: { id: number; lvl: number; petHouseLevel: number; goldPassMultiplier?: number }) {
+function PetEntry({
+  id, lvl, petHouseLevel, goldPassMultiplier, onGroupTotal,
+}: {
+  id: number; lvl: number; petHouseLevel: number; goldPassMultiplier?: number;
+  onGroupTotal?: (id: number, costs: SumEntry[]) => void;
+}) {
   const { data, loading } = useItemData<PetDataFile>('pets', id);
-
   if (loading) return null;
   if (!data) return null;
   if (petHouseLevel < data.pet_house) return null;
-
-  return <PetRow id={id} lvl={lvl} data={data} petHouseLevel={petHouseLevel} goldPassMultiplier={goldPassMultiplier} />;
+  return <PetRow id={id} lvl={lvl} data={data} petHouseLevel={petHouseLevel} goldPassMultiplier={goldPassMultiplier} onGroupTotal={onGroupTotal} />;
 }
 
 export function PetList({ pets, petHouseLevel, goldPassMultiplier }: Props) {
+  const [groupTotals, setGroupTotals] = useState<Map<number, SumEntry[]>>(new Map());
+
+  const reportGroupTotal = useCallback((id: number, costs: SumEntry[]) => {
+    setGroupTotals((prev) => {
+      const next = new Map(prev);
+      next.set(id, costs);
+      return next;
+    });
+  }, []);
+
+  const listTotal = useMemo(() => aggregateCosts([...groupTotals.values()]), [groupTotals]);
+
   const levelMap = new Map<number, number>();
   for (const p of pets) {
-    if (VILLAGE_PET_IDS.has(p.data)) {
-      levelMap.set(p.data, p.lvl);
-    }
+    if (VILLAGE_PET_IDS.has(p.data)) levelMap.set(p.data, p.lvl);
   }
 
-  if (levelMap.size === 0) {
-    return <div className="bld-empty">펫 데이터가 없습니다.</div>;
-  }
+  if (levelMap.size === 0) return <div className="bld-empty">펫 데이터가 없습니다.</div>;
 
   return (
     <div className="bld-list">
+      <ListSummaryBar totals={listTotal} />
       {PET_DISPLAY_ORDER
         .filter((id) => levelMap.has(id))
         .map((id) => (
-          <PetEntry key={id} id={id} lvl={levelMap.get(id)!} petHouseLevel={petHouseLevel} goldPassMultiplier={goldPassMultiplier} />
+          <PetEntry key={id} id={id} lvl={levelMap.get(id)!} petHouseLevel={petHouseLevel} goldPassMultiplier={goldPassMultiplier} onGroupTotal={reportGroupTotal} />
         ))}
     </div>
   );

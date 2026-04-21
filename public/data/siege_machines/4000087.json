@@ -1,7 +1,7 @@
 {
     "id": 4000087,
     "name": "통나무 발사기",
-    "workshop": 1,
+    "workshop": 5,
     "upgrade": [
         {
             "level": 1,
@@ -9,7 +9,7 @@
                 "elixir"
             ],
             "cost": null,
-            "time": "64s",
+            "time": null,
             "laboratory": null
         },
         {
@@ -18,7 +18,7 @@
                 "elixir"
             ],
             "cost": 3200000,
-            "time": "20s",
+            "time": "3d",
             "laboratory": 10
         },
         {
@@ -27,7 +27,7 @@
                 "elixir"
             ],
             "cost": 4500000,
-            "time": "76s",
+            "time": "4d",
             "laboratory": 10
         },
         {
@@ -36,7 +36,7 @@
                 "elixir"
             ],
             "cost": 7500000,
-            "time": "33s",
+            "time": "7d",
             "laboratory": 11
         },
         {
@@ -45,7 +45,7 @@
                 "elixir"
             ],
             "cost": 18000000,
-            "time": "25s",
+            "time": "12d",
             "laboratory": 14
         }
     ]

@@ -1,14 +1,14 @@
 {
     "id": 4000075,
     "name": "시즈 훈련소",
-    "workshop": 1,
+    "workshop": 4,
     "upgrade": [
         {
             "level": 1,
             "resource_type": [
                 "elixir"
             ],
-            "cost": 6,
+            "cost": null,
             "time": null,
             "laboratory": null
         },
@@ -17,36 +17,36 @@
             "resource_type": [
                 "elixir"
             ],
-            "cost": 8,
-            "time": null,
-            "laboratory": null
+            "cost": 3500000,
+            "time": "3d",
+            "laboratory": 10
         },
         {
             "level": 3,
             "resource_type": [
                 "elixir"
             ],
-            "cost": 10,
-            "time": null,
-            "laboratory": null
+            "cost": 5000000,
+            "time": "4d",
+            "laboratory": 10
         },
         {
             "level": 4,
             "resource_type": [
                 "elixir"
             ],
-            "cost": 11,
-            "time": null,
-            "laboratory": null
+            "cost": 8000000,
+            "time": "7d",
+            "laboratory": 11
         },
         {
             "level": 5,
             "resource_type": [
                 "elixir"
             ],
-            "cost": 11,
-            "time": null,
-            "laboratory": null
+            "cost": 18000000,
+            "time": "12d",
+            "laboratory": 14
         }
     ]
 }

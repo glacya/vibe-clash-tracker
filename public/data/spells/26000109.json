@@ -1,4 +1,52 @@
 {
     "id": 26000109,
-    "upgrade": []
+    "name": "얼음 블록 마법",
+    "dark_spell_factory": 7,
+    "upgrade": [
+        {
+            "level": 1,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": null,
+            "time": null,
+            "laboratory": null
+        },
+        {
+            "level": 2,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 140000,
+            "time": "10d",
+            "laboratory": 12
+        },
+        {
+            "level": 3,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 200000,
+            "time": "11d",
+            "laboratory": 13
+        },
+        {
+            "level": 4,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 280000,
+            "time": "14d",
+            "laboratory": 14
+        },
+        {
+            "level": 5,
+            "resource_type": [
+                "dark_elixir"
+            ],
+            "cost": 320000,
+            "time": "16d",
+            "laboratory": 15
+        }
+    ]
 }

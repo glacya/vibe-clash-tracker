@@ -1,7 +1,7 @@
 {
     "id": 26000003,
     "name": "이동 마법",
-    "spell_factory": 1,
+    "spell_factory": 4,
     "upgrade": [
         {
             "level": 1,

@@ -1,7 +1,7 @@
 {
     "id": 26000002,
     "name": "분노 마법",
-    "spell_factory": 1,
+    "spell_factory": 3,
     "upgrade": [
         {
             "level": 1,
